@@ -18,8 +18,8 @@ struct monitor_request {
     char container_id[MONITOR_NAME_LEN];
 };
 
-#define MONITOR_MAGIC 'M'
-#define MONITOR_REGISTER _IOW(MONITOR_MAGIC, 1, struct monitor_request)
+#define MONITOR_MAGIC      'M'
+#define MONITOR_REGISTER   _IOW(MONITOR_MAGIC, 1, struct monitor_request)
 #define MONITOR_UNREGISTER _IOW(MONITOR_MAGIC, 2, struct monitor_request)
 
 #endif
